@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acountax Solution</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="testimonials.css"> 
+  <script src="script.js"></script>
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  
+  <div class="top-header">
+    <div class="left">
+      <a href="mailto:taxationking24@gmail.com">
+        <i class="fas fa-envelope"></i> taxationking24@gmail.com
+      </a>
+      <a href="tel:+919534693894">
+        <i class="fas fa-phone"></i> +91-9534693894
+      </a>
+    </div>
+    <div class="right">
+      <a href="https://wa.me/919534693894" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="https://www.google.com/" target="_blank">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.linkedin.com/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+
+  
+  <header>
+    <div class="container">
+        <a href="/">
+            <img src="images/Logo.png" alt="Acountax Solution" class="logo">
+        </a>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button> 
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services ▾</a>
+                    <ul class="dropdown-content">
+                      <li><a href="services.html">Services</a></li>
+                      <li><a href="testimonials.html">Testimonials</a></li>
+                      <li><a href="request-appointment.html">Request Appointment</a></li>
+                    </ul>
+                </li>
+
+                
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Resources ▾</a>
+                    <ul class="dropdown-content">
+                      <li><a href="https://www.incometax.gov.in/" target="_blank">Income Tax Return Filling</a></li>
+                      <li><a href="https://www.gst.gov.in/" target="_blank">GST Return Filling</a></li>
+                      <li><a href="https://www.gst.gov.in/" target="_blank">GST Registration</a></li>
+                      <li><a href="https://www.tdscpc.gov.in/app/login.xhtml" target="_blank">TDS Return Filling</a></li>
+                      <li><a href="https://ipindia.gov.in/" target="_blank">Trademark</a></li>
+                      <li><a href="https://mca.gov.in/" target="_blank">Roc-compliance</a></li>
+                      <li><a href="https://www.icai.org/ " target="_blank">Accounting and Book-Keeping</a></li>
+                      <li><a href="https://fssai.gov.in/" target="_blank">fssai</a></li>
+                      <li><a href="https://copyright.gov.in/" target="_blank">@Copyright</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="client-portal.html">Client Portal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="hero">
+  <img src="images/about.png" alt="Hero Image">
+</div>
+<div class="review-container">
+  
+  <div class="review-rating">
+      <h2>Google Review Summary</h2>
+      <div class="rating-score">
+          <span class="score">5.0</span>
+          <div class="stars">★★★★★</div>
+          <p>31 reviews</p>
+      </div>
+  </div>
+
+  
+  <div class="written-reviews">
+      <h2>Customer Reviews</h2>
+      
+      <div class="review">
+          <p>"One Solution of all Accounting and taxation problem by highly talented and experienced Professionals."</p>
+          <h4>Shubham Jaimini.. </h4>
+          <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="review">
+          <p>"Best place for your Accounts and Taxation related problem. They always file returns on time."</p>
+          <h4>Anuj Rohila </h4>
+          <div class="stars">★★★★★</div>
+      </div>
+
+      <div class="review">
+          <p>"In my opinion, this is the best CA firm in Jaipur. Mr. Rahul is very responsible and intelligent."</p>
+          <h4>Lokesh Sharma </h4>
+          <div class="stars">★★★★★</div>
+      </div>
+      <div class="review">
+        <p>"Acountax solution is best office for Service providing related to Income tax ,GST,Finance ,and Investment etc."</p>
+        <h4>CA Rahul Agrawal </h4>
+        <div class="stars">★★★★★</div>
+    </div>
+    <div class="review">
+      <p>Trustable people with high quality of services. Very professional in the working and no delays in filing of returns.."</p>
+      <h4>janak mittal </h4>
+      <div class="stars">★★★★★</div>
+  </div>
+
+  <!--button class="review-btn" onclick="window.open('https://g.co/kgs/TrgZBmv', '_blank');"> 
+    Write a Review
+</button-->
+
+<button class="review-btn" onclick="toggleReviewForm()">Write a Review</button>
+
+
+<div id="review-form" style="display:none; margin-top: 15px;">
+  <textarea id="user-feedback" placeholder="Write your review here..." rows="2" cols="50"
+            style="border: none; border-bottom:1px solid #3498db; outline: none; width: 100%; padding: 6px 2px; height: 30px; margin-bottom: 10px; font-size: 20px;"></textarea><br>
+  
+  <input type="text" id="user-name" placeholder="Your Name"
+         style="border: none; border-bottom: 1.5px solid #3498db; outline: none; padding: 6px; font-size: 15px; width: 100%; margin-bottom: 10px;">
+  
+  <button onclick="submitReview()" style="background-color: #d35400; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+    Submit Review
+  </button>
+</div>
+
+
+
+   
+
+
+  </div>
+</div>
+
+
+  
+  <footer style="background-color: #5dade2; color: black; padding: 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <div style="display: flex; align-items: center; gap: 15px;">
+        <span style="font-weight: bold;">Need Support?</span>
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <span>📞 +91 9534693894</span>
+            <span>✉️ taxationking24@gmail.com</span>
+        </div>
+    </div>
+  
+    <div style="display: flex; gap: 15px;">
+      <a href="https://facebook.com" target="_blank" style="color: white; font-size: 22px;"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com" target="_blank" style="color: white; font-size: 22px;"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com" target="_blank" style="color: white; font-size: 22px;"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com" target="_blank" style="color: white; font-size: 22px;"><i class="fab fa-twitter"></i></a>
+  </div>
+  </footer>
+
+<footer style="text-align: center; padding: 10px; background-color: #aed6f1; color: black;">
+  © 2025 AcounTax Solution. All Rights Reserved.
+</footer>
+
+
+</body>
+</html>
